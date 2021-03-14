@@ -7,7 +7,9 @@
                 "${workspaceFolder}/module/libstdcxx/include",
                 "${workspaceFolder}/module/libport/include",
                 "${workspaceFolder}/module/libboot/include",
+                "${workspaceFolder}/module/libcolor/include",
                 "${workspaceFolder}/module/libmemory/include",
+                "${workspaceFolder}/module/libscreen/include",
                 "${workspaceFolder}/module/libinterrupt/include"
             ],
             "defines": [],

@@ -1,4 +1,4 @@
-#include <init/init.hpp>
+#include <global/init.hpp>
 #include <interrupt/interrupt.hpp>
 #include <port/port.hpp>
 #include <std/stdcxx.hpp>
@@ -16,7 +16,7 @@ namespace
     };
 } // namespace
 
-namespace system::init
+namespace system::global::init
 {
     void initIdt()
     {
@@ -49,4 +49,4 @@ namespace system::init
         system::io::port::writeBtye(system::io::port::pic::PIC1_IMR, 0b11111111);
     }
 
-} // namespace system::init
+} // namespace system::global::init

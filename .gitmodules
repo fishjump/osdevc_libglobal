@@ -13,3 +13,9 @@
 [submodule "module/libboot"]
 	path = module/libboot
 	url = https://github.com/fishjump/osdevc_libboot.git
+[submodule "module/libscreen"]
+	path = module/libscreen
+	url = https://github.com/fishjump/osdevc_libscreen.git
+[submodule "module/libcolor"]
+	path = module/libcolor
+	url = https://github.com/fishjump/osdevc_libcolor.git

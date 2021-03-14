@@ -1,4 +1,5 @@
 #include <boot/boot.hpp>
+#include <global/init.hpp>
 #include <interrupt/interrupt.hpp>
 #include <memory/memory.hpp>
 
@@ -33,7 +34,7 @@ namespace
     };
 } // namespace
 
-namespace system::init
+namespace system::global::init
 {
     void initMemory()
     {
@@ -77,4 +78,4 @@ namespace system::init
         system::memory::getGlobalMemoryDescriptor()->usablePages = usablePages;
     }
 
-} // namespace system::init
+} // namespace system::global::init
