@@ -1,7 +1,7 @@
 #pragma once
 
-#include <screen/screen.hpp>
 #include <text_screen/text_screen.hpp>
+#include <screen/screen.hpp>
 
 namespace system::global::instance
 {
