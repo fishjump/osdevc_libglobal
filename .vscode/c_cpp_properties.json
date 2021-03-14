@@ -10,6 +10,7 @@
                 "${workspaceFolder}/module/libcolor/include",
                 "${workspaceFolder}/module/libmemory/include",
                 "${workspaceFolder}/module/libscreen/include",
+                "${workspaceFolder}/module/libtextscreen/include",
                 "${workspaceFolder}/module/libinterrupt/include"
             ],
             "defines": [],

@@ -19,3 +19,6 @@
 [submodule "module/libcolor"]
 	path = module/libcolor
 	url = https://github.com/fishjump/osdevc_libcolor.git
+[submodule "module/libtextscreen"]
+	path = module/libtextscreen
+	url = https://github.com/fishjump/osdevc_libtextscreen.git

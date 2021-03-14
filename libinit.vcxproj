@@ -21,6 +21,7 @@
         <Include Include="$(ModulePath)/libport/include" />
         <Include Include="$(ModulePath)/libmemory/include" />
         <Include Include="$(ModulePath)/libscreen/include" />
+        <Include Include="$(ModulePath)/libtextscreen/include" />
         <Include Include="$(ModulePath)/libinterrupt/include" />
     </ItemGroup>
 

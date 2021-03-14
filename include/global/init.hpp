@@ -6,4 +6,5 @@ namespace system::global::init
     void initPic();
     void initMemory();
     void initScreen();
+    void initTextScreen();
 } // namespace system::init
