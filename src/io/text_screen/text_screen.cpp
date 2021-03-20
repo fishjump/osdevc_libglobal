@@ -6,8 +6,8 @@ system::io::entity::TextScreen gobalInstance;
 
 namespace system::global {
 namespace init {
-    void initTextScreen() {
-        gobalInstance = system::io::entity::TextScreen();
+    void initTextScreen(system::media::entity::Font defaultFont, system::media::entity::Color defaultColor) {
+        gobalInstance = system::io::entity::TextScreen(defaultFont, defaultColor);
     }
 } // namespace init
 
