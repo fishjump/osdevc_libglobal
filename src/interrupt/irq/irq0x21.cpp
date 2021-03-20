@@ -2,10 +2,10 @@
 
 #include "../irq.hpp"
 
-void system::interrupt::irq::irq0x21(interrupt_frame *frame)
-{
-    // system::io::TextModeScreen &tm = system::io::TextModeScreen::getGobalInstance();
-    // system::io::Keyboard &keyboard = system::io::Keyboard::getGobalInstance();
+void system::interrupt::irq::irq0x21(interrupt_frame *frame) {
+    // system::io::TextModeScreen &tm =
+    // system::io::TextModeScreen::getGobalInstance(); system::io::Keyboard
+    // &keyboard = system::io::Keyboard::getGobalInstance();
 
     unsigned char scan_code = system::io::port::readBtye(0x60);
 

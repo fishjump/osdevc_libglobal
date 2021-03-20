@@ -22,3 +22,6 @@
 [submodule "module/libtextscreen"]
 	path = module/libtextscreen
 	url = https://github.com/fishjump/osdevc_libtextscreen.git
+[submodule "module/libfont"]
+	path = module/libfont
+	url = https://github.com/fishjump/osdevc_libfont.git

@@ -19,6 +19,7 @@
         <Include Include="$(ModulePath)/libboot/include" />
         <Include Include="$(ModulePath)/libcolor/include" />
         <Include Include="$(ModulePath)/libport/include" />
+        <Include Include="$(ModulePath)/libfont/include" />
         <Include Include="$(ModulePath)/libmemory/include" />
         <Include Include="$(ModulePath)/libscreen/include" />
         <Include Include="$(ModulePath)/libtextscreen/include" />

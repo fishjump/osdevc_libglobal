@@ -52,19 +52,17 @@
     X(irq0x2e)  \
     X(irq0x2f)
 
-namespace system::interrupt::irq
-{
-    class interrupt_frame
-    {
-        uint32_t eip;
-        uint32_t cs;
-        uint32_t eflags;
-    };
+namespace system::interrupt::irq {
+class interrupt_frame {
+    uint32_t eip;
+    uint32_t cs;
+    uint32_t eflags;
+};
 
-    using IrqCall = __attribute__((interrupt)) void(interrupt_frame *frame);
-    extern const IrqCall *irqs[0x30];
+using IrqCall = __attribute__((interrupt)) void(interrupt_frame *frame);
+extern const IrqCall *irqs[0x30];
 
 #define X(name) IrqCall name;
-    IrqList
+IrqList
 #undef X
 } // namespace system::interrupt::irq
