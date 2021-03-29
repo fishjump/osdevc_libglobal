@@ -1,19 +1,21 @@
 #include <global/global.hpp>
 
+#include "../../lazyload.hpp"
+
 namespace {
-system::io::entity::Screen gobalInstance;
+lazyload<system::io::entity::Screen> gobalScreen;
 } // namespace
 
 namespace system::global {
 namespace init {
     void initScreen() {
-        gobalInstance = system::io::entity::Screen();
+        gobalScreen.init();
     }
 } // namespace init
 
 namespace instance {
     system::io::entity::Screen *getScreen() {
-        return &gobalInstance;
+        return gobalScreen.get();
     }
 } // namespace instance
 

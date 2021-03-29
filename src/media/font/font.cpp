@@ -1,6 +1,8 @@
 #include <global/global.hpp>
 #include <std/stdcxx.hpp>
 
+#include "../../lazyload.hpp"
+
 namespace {
 const uint8_t
     defaultFontTable[system::media::entity::Font::fontTableSize]
@@ -664,20 +666,20 @@ const uint8_t
                          0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00},
 };
 
-system::media::entity::Font gobalInstance;
+lazyload<system::media::entity::Font> defaultFont;
 
 } // namespace
 
 namespace system::global {
 namespace init {
     void initDefaultFont() {
-        gobalInstance = system::media::entity::Font((uint8_t *)defaultFontTable);
+        defaultFont.init((char *)defaultFontTable);
     }
 } // namespace init
 
 namespace instance {
-    system::media ::entity::Font *getDefaultFont() {
-        return &gobalInstance;
+    system::media::entity::Font *getDefaultFont() {
+        return defaultFont.get();
     }
 } // namespace instance
 

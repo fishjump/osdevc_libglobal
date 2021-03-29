@@ -1,19 +1,22 @@
 #include <global/global.hpp>
 
+#include "../../lazyload.hpp"
+
 namespace {
-system::io::entity::TextScreen gobalInstance;
+lazyload<system::io::entity::TextScreen> gobalTextScreen;
 } // namespace
 
 namespace system::global {
 namespace init {
-    void initTextScreen(system::media::entity::Font defaultFont, system::media::entity::Color defaultColor) {
-        gobalInstance = system::io::entity::TextScreen(defaultFont, defaultColor);
+    void initTextScreen(system::media::entity::Font  defaultFont,
+                        system::media::entity::Color defaultColor) {
+        gobalTextScreen.init(defaultFont, defaultColor);
     }
 } // namespace init
 
 namespace instance {
     system::io::entity::TextScreen *getTextScreen() {
-        return &gobalInstance;
+        return gobalTextScreen.get();
     }
 } // namespace instance
 
