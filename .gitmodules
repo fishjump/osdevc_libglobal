@@ -25,3 +25,6 @@
 [submodule "module/libfont"]
 	path = module/libfont
 	url = https://github.com/fishjump/osdevc_libfont.git
+[submodule "module/libkeyboard"]
+	path = module/libkeyboard
+	url = https://github.com/fishjump/osdevc_libkeyboard.git

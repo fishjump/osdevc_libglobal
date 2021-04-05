@@ -12,7 +12,8 @@
                 "${workspaceFolder}/module/libscreen/include",
                 "${workspaceFolder}/module/libtextscreen/include",
                 "${workspaceFolder}/module/libinterrupt/include",
-                "${workspaceFolder}/module/libfont/include"
+                "${workspaceFolder}/module/libfont/include",
+                "${workspaceFolder}/module/libkeyboard/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
